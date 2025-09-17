@@ -95,6 +95,34 @@ calcularValorTotal = function () {
 
 }
 limpiar = function () {
+    let cmpTxtCaja;
+
+    cmpTxtCaja = document.getElementById("txtProducto");
+    cmpTxtCaja.value = "";
+
+    cmpTxtCaja = document.getElementById("txtCantidad");
+    cmpTxtCaja.value = "";
+
+    cmpTxtCaja = document.getElementById("txtPrecio");
+    cmpTxtCaja.value = "";
+    
+    cmpTxtCaja = document.getElementById("txtPorcentajeDescuento");
+    cmpTxtCaja.value = "";
+
+    cmpTxtCaja = document.getElementById("lblSubtotal");
+    cmpTxtCaja.innerText = "0.0";
+
+    cmpTxtCaja = document.getElementById("lblDescuento");
+    cmpTxtCaja.innerText = "0.0";
+
+    cmpTxtCaja = document.getElementById("lblValorIVA");
+    cmpTxtCaja.innerText = "0.0";
+
+    cmpTxtCaja = document.getElementById("lblTotal");
+    cmpTxtCaja.innerText = "0.0";
+
+    cmpTxtCaja = document.getElementById("lblResumen");
+    cmpTxtCaja.innerText = "";
     /*
         Dejar todas las cajas de texto con el valor cadena vacía, 0 ó 0.0 según el tipo de dato
         Dejar todos los textos de los montos con el valor 0.0
