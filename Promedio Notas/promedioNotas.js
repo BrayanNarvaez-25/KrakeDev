@@ -11,7 +11,19 @@ calcularPromedioNotas = function(){
 
     let resultado = cambiarTexto("promedio","Promedio: " + promRedondeado);
 
-
+    if(promRedondeado < 5 && promRedondeado >0){
+        cambiarTexto("noticia","REPROBADO");
+        cambiarImagen("img","negativo.gif");
+    }else if(promRedondeado >= 5 && promRedondeado <= 8){
+        cambiarTexto("noticia","BUEN TRABAJO");
+        cambiarImagen("img","ok.gif");
+    }else if(promRedondeado > 8 && promRedondeado <= 10){
+        cambiarTexto("noticia", "EXCELENTE");
+        cambiarImagen("img","ok.gif");
+    }else{
+        cambiarTexto("noticia","DATOS INCORRECTOS");
+        cambiarImagen("img","pregunta.gif")
+    }
 }
 
 borrar = function(){
@@ -32,4 +44,5 @@ borrar = function(){
     cmpTxtCaja = document.getElementById("noticia");
     cmpTxtCaja.innerText = "- - - - -";
 
+    cambiarImagen("img","pregunta.gif");
 }
