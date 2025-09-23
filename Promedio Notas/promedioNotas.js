@@ -10,7 +10,7 @@ calcularPromedioNotas = function(){
     let promRedondeado = promedio.toFixed(2);
 
     let resultado = cambiarTexto("promedio","Promedio: " + promRedondeado);
-
+        
     if(promRedondeado < 5 && promRedondeado >0){
         cambiarTexto("noticia","REPROBADO");
         cambiarImagen("img","negativo.gif");
@@ -24,6 +24,7 @@ calcularPromedioNotas = function(){
         cambiarTexto("noticia","DATOS INCORRECTOS");
         cambiarImagen("img","pregunta.gif")
     }
+    
 }
 
 borrar = function(){
