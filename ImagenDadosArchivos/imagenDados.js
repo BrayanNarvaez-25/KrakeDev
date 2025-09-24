@@ -20,16 +20,7 @@ modificarpuntos = function(numero){
     
 }
 
-limpiar = function(){
-    puntos = 0;
-    lanzamientos = 5;
-    cambiarTexto("puntos",puntos);
-    cambiarTexto("lanzamientos",lanzamientos);
-    cambiarImagen("imgDado","");
-    if(lanzamientos == 5){
-        lanzamientos = lanzamientos + 1;
-    }   
-}
+
 
 modificarLanzamientos = function(){
     lanzamientos = lanzamientos - 1;
