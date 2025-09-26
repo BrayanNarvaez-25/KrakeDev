@@ -32,3 +32,40 @@ validarEstructura = function (placa) {
     }
 
 }
+
+const PROVINCIAS = {
+  'A': 'Azuay',
+  'B': 'Bolivar', 
+  'C': 'Carchi',
+  'E': 'Esmeraldas',
+  'G': 'Guayas',
+  'H': 'Chimborazo',
+  'I': 'Imbabura',
+  'J': 'Loja',
+  'K': 'Cañar',
+  'L': 'Los Rios',
+  'M': 'Manabí',
+  'N': 'Napo',
+  'O': 'El Oro',
+  'P': 'Pichincha',
+  'Q': 'Orellana',
+  'R': 'Pastaza',
+  'S': 'Morona Santiago',
+  'T': 'Tungurahua',
+  'U': 'Sucumbios',
+  'V': 'Galapagos',
+  'W': 'Cotopaxi',
+  'X': 'Zamora Chinchipe',
+  'Y': 'Santa Elena',
+  'Z': 'Santo Domingo'
+}
+
+obtenerProvincia = function(placa){
+    let primeraLetra = placa.charAt(0)
+    if(placa != null){
+        return mostrarTexto("lblProvincia",PROVINCIAS[primeraLetra]);
+    }else{
+        mostrarTexto("lblProvincia","PROVINCIA INCORRECTA");
+        return null;
+    }
+}
