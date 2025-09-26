@@ -12,7 +12,7 @@
 <body>
     <div class="principal">
         <div class="logoEscuela">
-            <img src="./imagenes/logoKrakeDev.png" width="80%" />
+            <img src="./imagenes/logoKrakeDev.png" width="170%" />
         </div>
         <div class="contenido">
             <div class="titulo">
@@ -30,14 +30,23 @@
             <div class="botones">
                 <div class="contenedorBoton">
                     <input type="button" value="VALIDAR" class="estiloBoton" onclick="validarPlaca();">
+                    
+                </div>
+                <div class="contenedorBoton">
+                    <input type="button" value="LIMPIAR" class="estiloBoton" onclick="limpiar();">
                 </div>
             </div>
-            <div class="ingresoDatos">
-                <div class="areaResultado">
-                    <div class="resultado" id="lblValidacion"> - - -</div>
-                    <div class="resultado" id="lblProvincia"> - - - </div>
-                    <div class="resultado" id="lblVechiculo"> - - - </div>
-                </div>
+        </div>
+        <div class="contenido">
+            <div class="areaResultado">
+                <div class="tituloCampo"> VALIDACION: </div>
+                <div class="resultado" id="lblValidacion"> - - - </div>
+                <div class="tituloCampo"> PROVINCIA: </div>
+                <div class="resultado" id="lblProvincia"> - - - </div>
+                <div class="tituloCampo"> TIPO DE VEHICULO: </div>
+                <div class="resultado" id="lblVechiculo"> - - - </div>
+                <div class="tituloCampo"> DIA DE PICO Y PLACA: </div>
+                <div class="resultado" id="lblPicoYplaca"> - - - </div>
             </div>
         </div>
     </div>

@@ -24,3 +24,12 @@ esGuion = function(caracter){
         return false;
     }
 }
+
+limpiar = function(){
+    mostrarTextoEnCaja("txtPlaca","");
+    mostrarTexto("lblErrores","");
+    mostrarTexto("lblValidacion","");
+    mostrarTexto("lblProvincia","");
+    mostrarTexto("lblVechiculo","");
+    mostrarTexto("lblPicoYplaca","");
+}

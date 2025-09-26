@@ -109,3 +109,26 @@ obtenerTipoVehiculo = function(placa){
         return null
     }
 }
+
+const diaPicoYplaca = {
+    '1': 'Lunes',
+    '2': 'Lunes',
+    '3': 'Martes',
+    '4': 'Martes',
+    '5': 'Miercoles',
+    '6': 'Miercoles',
+    '7': 'Jueves',
+    '8': 'Jueves',
+    '9': 'Viernes',
+    '0': 'Viernes'
+}
+obtenerDiaPicoYPlaca = function(placa){
+    let longuitudCadena = placa.length -1;
+    let ultimoDigito = placa.charAt(longuitudCadena);
+    if(placa != null){
+        return mostrarTexto("lblPicoYplaca",diaPicoYplaca[ultimoDigito]);
+    }else{
+        mostrarTexto("lblVechiculo","VEHICULO INCORRECTO")
+        return null
+    }
+}
