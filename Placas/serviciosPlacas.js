@@ -61,11 +61,51 @@ const PROVINCIAS = {
 }
 
 obtenerProvincia = function(placa){
-    let primeraLetra = placa.charAt(0)
+    let primeraLetra = placa.charAt(0);
     if(placa != null){
         return mostrarTexto("lblProvincia",PROVINCIAS[primeraLetra]);
     }else{
         mostrarTexto("lblProvincia","PROVINCIA INCORRECTA");
         return null;
+    }
+}
+
+const vehiculos = {
+    'A': 'Vehiculos comerciale',
+    'Z': 'Vehiculos comerciale',
+    'E': 'Gubernamental',
+    'X': 'Vehiculo de uso oficial',
+    'S': 'Vehiculos de gobierno provincial',
+    'M': 'Vehiculos municipales',
+    'B': 'Vehiculo Particular',
+    'C': 'Vehiculo Particular',
+    'D': 'Vehiculo Particular',
+    'F': 'Vehiculo Particular',
+    'G': 'Vehiculo Particular',
+    'H': 'Vehiculo Particular',
+    'I': 'Vehiculo Particular',
+    'J': 'Vehiculo Particular',
+    'K': 'Vehiculo Particular',
+    'L': 'Vehiculo Particular',
+    'N': 'Vehiculo Particular',
+    'Ñ': 'Vehiculo Particular',
+    'O': 'Vehiculo Particular',
+    'P': 'Vehiculo Particular',
+    'Q': 'Vehiculo Particular',
+    'R': 'Vehiculo Particular',
+    'T': 'Vehiculo Particular',
+    'U': 'Vehiculo Particular',
+    'V': 'Vehiculo Particular',
+    'W': 'Vehiculo Particular',
+    'Y': 'Vehiculo Particular'
+
+}
+obtenerTipoVehiculo = function(placa){
+    let segundaLetra = placa.charAt(1);
+    if(placa != null){
+        return mostrarTexto("lblVechiculo",vehiculos[segundaLetra]);
+    }else{
+        mostrarTexto("lblVechiculo","VEHICULO INCORRECTO")
+        return null
     }
 }
