@@ -1,0 +1,118 @@
+body {
+    background-image: url("./imagenes/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal {
+    justify-content: center;
+    margin: 20px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+
+.titulo {
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 300px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagenes {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+    margin-right: 50px;
+}
+
+.opc {
+    font-size: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.opcComputadora {
+    margin-left: 200px;
+    font-size: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenesComputadora {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: -15px;
+}
+
+.areaResultado {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+    margin-right: 170px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.resultado {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.estiloBoton:hover {
+    background-color: white;
+    color: #0d0e0d;
+    border: 2px solid #0c0c0c;
+    border-radius: 5px;
+}
+
+.estiloBoton:active {
+    background-color: #080808;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.contenedorBoton {
+    display: flex;
+    justify-content: center;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
