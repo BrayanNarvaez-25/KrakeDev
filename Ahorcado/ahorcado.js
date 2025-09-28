@@ -40,3 +40,15 @@ mostrarLetra = function(letra,posicion){
         mostrarTexto("div5",letra);
     }
 }
+
+validar = function(letra){
+    let letrasEncontradas = 0;
+    let posicion;
+    for(let i = 0;i < letra.length;i++){
+        posicion = letra.charAt(i);
+        if(posicion == letra){
+            mostrarLetra(letra,posicion);
+            letrasEncontradas++;
+        }
+    }
+}
