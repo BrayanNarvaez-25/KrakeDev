@@ -21,3 +21,22 @@ guardarPalabra = function(){
     palabraSecreta = palabra;
     console.log(palabraSecreta)
 }
+
+mostrarLetra = function(letra,posicion){
+    let posicionLetra = posicion.charAt(0)
+    if(posicionLetra.length == 0){
+        mostrarTexto("div0",letra);
+    }
+    if(posicionLetra.length == 1){
+        mostrarTexto("div1",letra);
+    }
+    if(posicionLetra.length == 2){
+        mostrarTexto("div2",letra);
+    }
+    if(posicionLetra.length == 3){
+        mostrarTexto("div3",letra);
+    }
+    if(posicionLetra.length == 5){
+        mostrarTexto("div5",letra);
+    }
+}
