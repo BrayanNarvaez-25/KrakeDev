@@ -142,6 +142,7 @@ guardar = function () {
                 alert("EMPLEADO GUARDADO CORRECTAMENTE");
                 mostrarEmpleados();
                 esNuevo = false;
+                deshabilitar();
             }else{
                 alert("YA EXISTE UN EMPREADO CON LA CEDULA: " + cedula);
             }
