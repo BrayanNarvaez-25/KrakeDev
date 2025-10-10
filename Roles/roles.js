@@ -171,3 +171,12 @@ ejecutarBusqueda = function () {
     habilitarComponente("txtCedula");
     deshabilitarComponente("txtBusquedaCedula");
 }
+
+limpiar = function(){
+    mostrarTextoEnCaja("txtSueldo","");
+    mostrarTextoEnCaja("txtNombre","");
+    mostrarTextoEnCaja("txtApellido","");
+    mostrarTextoEnCaja("txtCedula","");
+    esNuevo = false;
+    deshabilitar();
+}
