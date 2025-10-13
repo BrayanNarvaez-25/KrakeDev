@@ -192,3 +192,25 @@ buscarPorRol = function () {
         mostrarTexto("infoSueldo", buscar.sueldo);
     }
 }
+
+calcularAporteEmpleado = function (sueldo) {
+    return parseFloat((sueldo * 0.0945).toFixed(2));
+}
+
+calcularValorAPagar = function (sueldo, AporteIESS, descuento) {
+    let valorAPagar = sueldo - AporteIESS - descuento;
+    return valorAPagar
+}
+
+calcularRol = function () {
+    let sueldo = recuperarFloatDiv("infoSueldo");
+    let descuento = recuperarFloat("txtDescuentos");
+    if (descuento = recuperarInt("txtDescuentos")) {
+        mostrarTexto("lblErrorDescuentos", "El valor del descuento debe ser decimal");
+    } else if (descuento >= 0 || descuento <= sueldo && descuento) {
+        let AporteIESS = calcularAporteEmpleado(sueldo);
+        mostrarTexto("infoIESS", AporteIESS);
+        let valorAPagar = calcularValorAPagar(sueldo, AporteIESS, descuento);
+        mostrarTexto("infoPago", valorAPagar);
+    }
+}
