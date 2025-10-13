@@ -292,8 +292,11 @@ mostrarTotales = function(){
         totalEmpleador += roles[i].aporteEmpleador;
         totalAPagar += roles[i].valorAPagar;
     }
-    mostrarRoles();
+    let totalNomina = parseFloat(totalAPagar) + parseFloat(totalEmpleado) + parseFloat(totalEmpleador);
     mostrarTexto("infoTotalPago",totalAPagar);
     mostrarTexto("infoAporteEmpresa",totalEmpleador);
     mostrarTexto("infoAporteEmpleado",totalEmpleado);
+    mostrarTexto("infoNomina",totalNomina);
+    mostrarRoles();
+    
 }
