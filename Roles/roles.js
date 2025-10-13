@@ -172,11 +172,23 @@ ejecutarBusqueda = function () {
     deshabilitarComponente("txtBusquedaCedula");
 }
 
-limpiar = function(){
-    mostrarTextoEnCaja("txtSueldo","");
-    mostrarTextoEnCaja("txtNombre","");
-    mostrarTextoEnCaja("txtApellido","");
-    mostrarTextoEnCaja("txtCedula","");
+limpiar = function () {
+    mostrarTextoEnCaja("txtSueldo", "");
+    mostrarTextoEnCaja("txtNombre", "");
+    mostrarTextoEnCaja("txtApellido", "");
+    mostrarTextoEnCaja("txtCedula", "");
     esNuevo = false;
     deshabilitar();
+}
+
+buscarPorRol = function () {
+    let cedula = recuperarTexto("txtBusquedaCedulaRol");
+    let buscar = buscarEmpleado(cedula);
+    if (buscar == null) {
+        alert("EMPLEADO NO EXISTE");
+    } else {
+        mostrarTexto("infoCedula", buscar.cedula);
+        mostrarTexto("infoNombre", buscar.nombre + " " + buscar.apellido)
+        mostrarTexto("infoSueldo", buscar.sueldo);
+    }
 }
