@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="orden.js"></script>
+    <script src="utilitarios.js"></script>
+    <link rel="stylesheet" href="roles.css" />
+</head>
+
+<body onload="mostrarPersonas();">
+    <div class="menu">
+        <div class="contenedorBoton">
+            <input type="button" value="PERSONAS" class="estiloBoton" onclick="" />
+        </div>
+    </div>
+    <div id="divEmpleado">
+        <div class="principal">
+
+            <div class="area">
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        NOMBRE
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtNombre" />
+                        <div class="error" id="lblErrorNombre"></div>
+                    </div>
+                </div>
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        EDAD
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtEdad" />
+                        <div class="error" id="lblErrorEdad"></div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <div class="contenedorBoton">
+                        <input type="button" value="BUSCAR MAYOR" class="estiloBoton" onclick="determinarMayor();" />
+                    </div>
+                    <div class="contenedorBoton">
+                        <input type="button" value="BUSCAR MENOR" class="estiloBoton" onclick="determinarMenor();" />
+                    </div>
+                    <div class="contenedorBoton">
+                        <input type="button" value="GUARDAR" class="estiloBoton" id="btnGuardar" onclick="agregarPersona();" />
+                    </div>
+                    <div class="contenedorBoton">
+                        <input type="button" value="LIMPIAR" class="estiloBoton" onclick="limpiar();" />
+                    </div>
+                </div>
+                <div id="tablaPersonas" class="areaTabla"></div>
+                <div class="principal">
+                    <div class="ingresoDatos">
+                        <div class="tituloCampo" id="lblResultado">
+                            PERSONA MAYOR:
+                        </div>
+                    </div>
+                </div>
+                <div class="principal">
+                    <div class="ingresoDatos">
+                        <div class="tituloCampo" id="lblResultado2">
+                            PERSONA MENOR:
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logoEscuela">
+                <img src="feliz.gif" width="50%" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
